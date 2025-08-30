@@ -1,0 +1,131 @@
+Rajya Vardhan Mishra, I am an Engineering Manager working at Google with almost 20 years of experience. If I could sit down with a Jr. Software Engineer, here are 50 cheat codes I would share with them that I learned from my experiences. 
+
+[1] Ask why this system even needs to exist
+➤ Before a single line is written, challenge the core purpose, “Is this a business problem or just a tech exercise?” Real systems solve pain, not boredom.
+
+[2] Redraw the lines, define what’s “inside” and “outside” your system
+➤ Figure out where your service starts, stops, and how it talks to the world. 80% of future headaches come from blurred boundaries.
+
+[3] Don’t chase new tech for the resume, use what your org supports
+➤ That AWS Lambda demo looks cool until your team tells you there’s a 10-year-old Jenkins server already scheduled to do that job. Proven > Shiny.
+
+[4] System design isn’t “one size fits all”, context is everything
+➤ YouTube and interview videos show perfect worlds. Your system will live in mess, legacy, and compromise. Embrace it.
+
+[5] Optimize for “how easy to change?” not “how cool is this?”
+➤ You won’t get it perfect first time. Make it so anyone (even you) can swap out parts later, with minimal pain.
+
+[6] Start with use cases, not tech
+➤ Interview solutions start with “put Kafka here.” Real solutions start with “who will use this and how?”
+
+[7] Know your real users, not just your APIs
+➤ Customers, PMs, even other devs, all are “users” with needs. If your “system” forgets one, it’s doomed.
+
+[8] Design for the traffic you have, not the traffic you dream of
+➤ Every engineer who overbuilt for ‘Google scale’ at a 10K user startup has regretted it. Scale when you must.
+
+[9] Understand your company’s default tech stack, don’t fight it
+➤ Don’t propose a NoSQL database if everyone else is running Postgres unless you have a bulletproof case.
+
+[10] Pick the boring solution if you want peace
+➤ Every time I chased “the best tech,” maintenance bit me back. The system you forget about is the most stable one.
+
+[11] Get the team’s buy-in before you architect a “masterpiece”
+➤ Don’t be a solo hero. Feedback from PMs, ops, QA, other engineers, all of it will expose what you missed.
+
+[12] Refactor and cleanup aren’t “nice to haves”, they’re your real job
+➤ Every shortcut you leave will double your pain in 6 months.
+
+[13] Read logs and production metrics every week
+➤ Production is where truth lives. Ignore at your own risk.
+
+[14] Test how things break, not just how they work
+➤ Simulate failing databases, crashing services, weird user flows, assume chaos is coming.
+
+[15] You’ll be asked to fix code you didn’t write, embrace it
+➤ Legacy code is half your career. Treat it with respect and curiosity, not blame.
+
+[16] Never let a diagram go out without clear boundaries
+➤ Always show what’s external, what’s internal, and what’s a dependency, otherwise, no one will know what breaks what.
+
+[17] Resist the urge to build microservices too early
+➤ Monoliths are easier to deploy, debug, and reason about at small scale. Split later, when pain justifies it.
+
+[18] Cost matters. Everything costs.
+➤ Tech choices drive real AWS bills, real SRE time, and real business dollars. You’re not in a vacuum.
+
+[19] Learn the difference between “urgent” and “important”
+➤ Shipping is important. Most “emergencies” are just poor planning. Hold your ground and focus.
+
+[20] Use peer reviews to teach and learn, not just to catch bugs
+➤ Explain the “why” of your changes, don’t just fix syntax. That’s how teams level up together.
+
+[21] Don’t let “learning opportunity” override “business need”
+➤ The podcast story: Picking AWS Lambda for fun, when Jenkins was enough, burned weeks and money. Be practical, not aspirational.
+
+[22] Fight for simplicity, even if it’s not sexy
+➤ Over-architected “best practices” will turn into tech debt you’ll own for years.
+
+[23] Read company principles, they exist for a reason
+➤ “Do no evil,” “Customer obsession”, whatever it is, your designs need to serve them.
+
+[24] Trace every feature to a real business metric
+➤ Can you map your new code to higher revenue, happier customers, or lower cost? If not, question why you’re building it.
+
+[25] When in doubt, ask questions, never fake confidence
+➤ Even the best engineers are relentless question-askers. No shame in clarity.
+
+[26] Don’t build “future-proof” abstractions for problems you don’t have
+➤ Design for today’s needs with just enough flexibility, but don’t gold-plate. YAGNI is real.
+
+[27] Don’t try to “outsmart” your future teammates
+➤ Clever hacks are cool till nobody understands your trick six months later. Prioritize clear over clever.
+
+[28] Surface assumptions, write them down
+➤ What do you expect to be true? What are you betting on? Make it visible so everyone is aligned.
+
+[29] Prototype to cut through uncertainty
+➤ If you’re stuck, build a small proof of concept before committing weeks to the “main” design.
+
+[30] Default to “fail safe,” not “fail loud”
+➤ Design so things degrade gracefully, users shouldn’t see stack traces or ugly errors unless it’s unavoidable.
+
+[38] Your value isn’t lines of code, it’s problems solved
+➤ Ten lines that unlock a business win beat 1,000 lines of “busy work.”
+
+[39] Never let ambiguity paralyze you
+➤ If requirements are fuzzy, get what you can, build a thin slice, and iterate. Movement > perfection.
+
+[40] The best engineers are calm in chaos
+➤ You’ll see outages, bugs, angry customers, don’t panic, just start troubleshooting step by step.
+
+[41] Influence is about trust, not just skills
+➤ Speak with honesty, deliver consistently, own your mistakes, teams follow who they trust.
+
+[42] Every major decision: write a one-pager and get input
+➤ Don’t launch a big refactor or design change solo, collect wisdom, spot blind spots, then move.
+
+[43] Don’t become “the only person who knows X”
+➤ Share knowledge, document quirks, and onboard others, being a bottleneck will hurt you and the team.
+
+[44] Use business constraints as design constraints
+➤ Timeline, budget, hiring, partnerships, these are as real as CPU and RAM. Design for the world you have.
+
+[45] Cut scope before you cut quality
+➤ Ship a small, solid feature now, not a giant, half-baked one later.
+
+[46] Make rollback and recovery easy from day one
+➤ Assume your first launch will break. Plan your escape hatch and test it.
+
+[47] Mentor, don’t micromanage
+➤ Ask questions, suggest approaches, but let juniors struggle and learn. The best growth comes with ownership.
+
+[48] Design for maintenance, not just “go live”
+➤ Will this be easy to update, debug, and extend six months from now? If not, you’ll regret it.
+
+[49] Don’t “gatekeep”, bring others up
+➤ Celebrate other people’s wins, teach them the “why” behind your decisions.
+That’s how you build a real engineering culture.
+
+[50] The journey is the lesson, collect habits, not certificates
+➤ Great engineers aren’t built in bootcamps or via one interview. It’s consistency, humility, and learning from each battle.
